@@ -7,6 +7,27 @@ body {
     color: #333;
 }
 
+.intro_text {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    z-index: 2; 
+}
+
+.intro_text::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    left: -5%;
+    top: 0;
+    z-index: -1; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+
 h1, h2 {
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
@@ -74,7 +95,7 @@ h1, h2 {
 }
 
 .middle_container_two {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
